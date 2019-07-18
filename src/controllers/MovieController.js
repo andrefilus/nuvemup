@@ -25,7 +25,7 @@ class MovieController {
     async show(req,res){
         try{
             const movie = await Movie.findById(req.params.id);
-
+            console.log(movie);
             return res.json(movie);
         } catch(error){
             return res.status(500).send({error: error});
