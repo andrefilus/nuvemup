@@ -11,6 +11,11 @@ const Recipe = new mongoose.Schema({
     },
     picture_path: {
         type:String,
+        required: true
+    },
+    author_path: {
+        type:String,
+        required: true
     },
     author_name: {
         type:String,
