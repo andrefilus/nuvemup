@@ -5,6 +5,10 @@ const Recipe = new mongoose.Schema({
         type:String,
         required: true
     },
+    category: {
+        type:String,
+        required: true
+    },
     steps: {
         type:String,
         required: true
